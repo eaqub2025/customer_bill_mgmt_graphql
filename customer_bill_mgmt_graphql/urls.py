@@ -16,7 +16,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-
+from customerbill.urls import urlpatterns as customerbill_urls
 urlpatterns = [
     path('admin/', admin.site.urls),
-]
+] + customerbill_urls
